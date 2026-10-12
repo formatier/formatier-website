@@ -1,0 +1,31 @@
+from_latest_tag = true
+ignore_merge_commits = false
+ignore_fixup_commits = false
+disable_changelog = false
+disable_bump_commit = false
+branch_whitelist = []
+pre = "alpha.*"
+skip_ci = "[skip ci]"
+skip_untracked = false
+pre_bump_hooks = []
+post_bump_hooks = []
+tag_prefix = "v"
+
+[commit_types]
+fix = { changelog_title = "🐛 Bug Fixes", bump_patch = true }
+merge = { changelog_title = "🔀 Merge branch", bump_minor = true }
+feat = { changelog_title = "✨ New Features", bump_minor = true }
+refactor = { changelog_title = "♻️ Code Refactoring", bump_patch = true }
+chore = { bump_patch = true, omit_from_changelog = true }
+perf = { changelog_title = "⚡ Performance Improvements", bump_patch = true }
+ci = { changelog_title = "👷 Continuous Integration" }
+ops = { changelog_title = "☁️ Operations & Infrastructure" }
+build = { changelog_title = "📦 Build System", bump_patch = true }
+docs = { changelog_title = "📝 Documentation" }
+style = { changelog_title = "💄 Styles & Formatting" }
+rollback = { changelog_title = "⏪ Rollbacks" }
+test = { changelog_title = "🧪 Tests & Coverage" }
+
+[changelog]
+path = "CHANGELOG.md"
+authors = []
