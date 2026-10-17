@@ -53,10 +53,8 @@ const showDropper = ref(false);
             </UiCard>
         </template>
 
-        <UiCard>
-            <UiCardTitle></UiCardTitle>
-            <UiCardContainer> </UiCardContainer>
-        </UiCard>
+        <SharedPostCard>
+        </SharedPostCard>
 
         <template #right></template>
     </UiContentContainer>

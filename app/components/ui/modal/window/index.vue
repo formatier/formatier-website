@@ -1,4 +1,7 @@
 <script setup lang="ts">
+const props = defineProps<{
+    closeIcon?: string
+}>()
 const emitter = defineEmits<{
     close: [];
 }>();
@@ -6,10 +9,10 @@ const emitter = defineEmits<{
 
 <template>
     <div
-        class="bg-surface-card border-surface-border border shadow-sm rounded-4xl flex flex-col min-w-xs md:min-w-sm lg:min-w-md xl:min-w-lg 2xl:min-w-xl"
+        class="bg-surface-card border-surface-border border shadow-sm rounded-4xl flex flex-col min-w-xs sm:max-w-sm md:min-w-sm md:max-w-md lg:min-w-md lg:max-w-lg xl:min-w-lg xl:max-w-xl 2xl:min-w-xl "
     >
         <div
-            class="px-5 py-3 flex justify-between items-center border-b border-b-surface-border"
+            class="px-5 py-3 flex justify-between items-start border-b border-b-surface-border"
         >
             <div>
                 <slot name="title-bar"></slot>
@@ -18,7 +21,7 @@ const emitter = defineEmits<{
                 <UiButton
                     @click="emitter('close')"
                     variant="primary-inverse"
-                    icon="ph:x"
+                    :icon="closeIcon ? closeIcon : 'ph:x'"
                     iconOnly
                 >
                 </UiButton>

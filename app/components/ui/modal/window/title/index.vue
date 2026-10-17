@@ -7,8 +7,8 @@ const props = defineProps<{
 </script>
 
 <template>
-    <div class="flex gap-3 items-center">
-        <div class="size-10 rounded-full p-2 bg-primary-surface">
+    <div class="flex gap-3 items-start">
+        <div class="size-10 min-w-10 min-h-10 rounded-full p-2 bg-primary-surface">
             <Icon
                 :name="props.icon"
                 v-if="props.icon"
@@ -19,9 +19,9 @@ const props = defineProps<{
             <h1 class="text-lg font-semibold text-content font-inter">
                 {{ props.title }}
             </h1>
-            <p class="text-sm text-content-subtle font-inter">
+            <UiMaxContent variant="overview" :max-line="2" class="text-sm text-content-subtle font-inter">
                 {{ props.description }}
-            </p>
+            </UiMaxContent>
         </div>
     </div>
 </template>
