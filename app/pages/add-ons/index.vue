@@ -1,6 +1,6 @@
 <script setup lang="ts">
 definePageMeta({
-    pageId: "integrations",
+    pageId: "add-ons",
 });
 </script>
 

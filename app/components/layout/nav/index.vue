@@ -1,6 +1,6 @@
 <template>
 	<nav
-		class="bg-surface-card flex items-center justify-between border-b border-b-surface-border py-4 px-vision"
+		class="bg-surface-card flex items-center justify-between border-b border-b-surface-border py-4 px-vision sticky top-0 h-19 z-10"
 	>
 		<ul class="flex items-center gap-4">
 			<NuxtLink to="/" class="h-6 lg:h-7 aspect-31/5">

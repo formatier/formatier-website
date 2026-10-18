@@ -33,7 +33,7 @@ defineExpose({ animateContainer });
 
 <template>
     <div
-        class="flex h-10 bg-primary-light rounded-full w-md gap-1 relative items-center px-1"
+        class="hidden lg:flex h-10 bg-primary-light rounded-full w-md gap-1 relative items-center px-1"
         ref="linkContainer"
     >
         <slot></slot>

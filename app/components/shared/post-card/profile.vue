@@ -51,7 +51,7 @@ const props = defineProps<{
 				</span>
 
 				<span
-					class="text-xs"
+					class="hidden sm:block text-xs"
 					v-if="props.spacialTag"
 					:style="{
 						color: props.spacialTag.color,
