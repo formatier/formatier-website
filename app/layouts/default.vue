@@ -19,12 +19,6 @@ const links = [
         label: "Vault",
     },
     {
-        path: "/explore",
-        pageId: "explore",
-        icon: "ph:compass",
-        label: "Explore",
-    },
-    {
         path: "/mail",
         pageId: "mail",
         icon: "ph:envelope-open",
@@ -70,7 +64,9 @@ function animateContainer() {
                     </LayoutNavLinkContainer>
                 </template>
 
-                <template #additional> </template>
+                <template #additional>
+                    <UiInputValue placeholder="Search"></UiInputValue>
+                </template>
             </LayoutNav>
         </template>
 

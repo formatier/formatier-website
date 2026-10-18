@@ -43,7 +43,7 @@ watch(searchValue, (searchValue) => {
 								<UiButton
 									icon="ph:arrows-out-bold"
 									variant="common"
-									size="xs "
+									size="xs"
 									@click="isSelectorOpen = true"
 									>Select</UiButton
 								>

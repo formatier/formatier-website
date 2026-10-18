@@ -1,3 +1,3 @@
 <template>
-    <div class="w-full h-px bg-surface-low"></div>
+    <div class="w-full h-px bg-surface-border"></div>
 </template>
