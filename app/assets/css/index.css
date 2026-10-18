@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @theme {
     /* สีแบรนด์หลัก ปุ่ม CTA หลัก, Active Nav Pill, Header Banners */
