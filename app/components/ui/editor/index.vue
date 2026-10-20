@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useEditor } from "@/composable/editor";
 import {
 	$getRoot,
 	BLUR_COMMAND,
@@ -8,7 +7,6 @@ import {
 	mergeRegister,
 } from "lexical";
 import {
-	$convertFromMarkdownString,
 	$convertToMarkdownString,
 	TRANSFORMERS,
 } from "@lexical/markdown";
@@ -102,7 +100,7 @@ onUnmounted(() => {
 			<div
 				ref="editor"
 				contenteditable
-				class="p-2 focus:outline-none font-plus-jakarta-sans bg-transparent z-10 relative"
+				class="p-2 focus:outline-none font-plus-jakarta-sans bg-transparent z-10 relative ui-prose"
 				:class="props.class"
 			></div>
 			<p

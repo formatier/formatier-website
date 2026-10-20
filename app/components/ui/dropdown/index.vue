@@ -12,7 +12,7 @@ const handleSelect = (value: string) => {
 </script>
 
 <template>
-    <div class="flex flex-col relative">
+    <div class="flex flex-col relative z-10 overflow-visible">
         <slot></slot>
         <div class="absolute mt-8 z-500" v-if="openModel">
             <slot name="content" :select="handleSelect"></slot>

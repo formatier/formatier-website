@@ -1,7 +1,11 @@
 <script setup lang="ts">
+const { saveUserDraft } = usePoster();
+
 const model = defineModel<boolean>({ default: false });
 const isSelectorOpen = ref<boolean>(false);
 const isDraftsOpen = ref<boolean>(false);
+
+const isEditingDraft = ref(false);
 
 const content = ref("");
 const tags = ref<string[]>([]);
@@ -65,6 +69,37 @@ watch(searchValue, (searchValue) => {
 										></UiInputValue>
 									</UiModalWindowTitleMenu>
 								</template>
+
+								<UiCard>
+									<div
+										class="grid grid-cols-[auto_2fr_3fr] gap-3"
+									>
+										<div>
+											<UiInputCheckbox />
+										</div>
+										<div class="flex gap-2">
+											<NuxtImg
+												class="size-12 rounded-2xl"
+												src=""
+											></NuxtImg>
+											<div
+												class="flex h-full w-full flex-col justify-between"
+											>
+												<h2
+													class="text-content font-semibold transition-colors duration-75"
+												>
+													แก้งคร้อวิทยา
+												</h2>
+												<p
+													class="text-content-subtle transition-colors duration-75"
+												>
+													โรงเรียนดังหลังวัดชัย
+												</p>
+											</div>
+										</div>
+										<div></div>
+									</div>
+								</UiCard>
 							</UiModalWindow>
 						</UiModal>
 					</div>
@@ -112,7 +147,7 @@ watch(searchValue, (searchValue) => {
 				<template #toolbar="{ toggle, convertBlock }">
 					<UiEditorToolbar
 						@toggle="toggle"
-						@convertBlock="convertBlock"
+						@convert-block="convertBlock"
 					>
 					</UiEditorToolbar>
 				</template>
