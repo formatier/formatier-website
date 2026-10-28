@@ -64,7 +64,7 @@
 	/* เครื่องมือ AI (OpenGraph Concept Map, CSI WASM) */
 	--color-status-purple: #8b5cf6;
 
-	--breakpoint-3xl: calc(var(--spacing) * 54);
+	--breakpoint-3xl: 105rem;
 
 	--font-inter: "Inter", "Kanit", sans-serif;
 	--font-plus-jakarta-sans: "Plus Jakarta Sans", "Kanit", sans-serif;
