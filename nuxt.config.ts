@@ -53,5 +53,11 @@ export default defineNuxtConfig({
 
   css: ["~/assets/css/index.css"],
 
-  modules: ["@nuxt/fonts", "@nuxt/icon", "@nuxt/image", "@pinia/nuxt"],
+  colorMode: {
+    classSuffix: '',
+    preference: 'system',
+    fallback: 'light',
+  },
+
+  modules: ["@nuxt/fonts", "@nuxt/icon", "@nuxt/image", "@pinia/nuxt", "@nuxtjs/color-mode"],
 });

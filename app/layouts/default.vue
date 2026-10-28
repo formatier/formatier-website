@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const colorMode = useColorMode()
+
 const links = [
 	{
 		path: "/",
@@ -31,12 +33,16 @@ const links = [
 		label: "Mail",
 	},
 	{
-		path: "/add-ons",
-		pageId: "add-ons",
+		path: "/connect",
+		pageId: "connect",
 		icon: "ph:lightbulb",
-		label: "Add-Ons",
+		label: "Connect",
 	},
 ];
+
+const toggleTheme = () => {
+  colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
+}
 
 const linkContainerRef = useTemplateRef("linkContainer");
 
@@ -70,7 +76,9 @@ function animateMobileContainer() {
 					</LayoutNavLinkContainer>
 				</template>
 
-				<template #additional> </template>
+				<template #additional>
+					<UiButton variant="common" size="sm" icon-only :icon="colorMode.value === 'dark' ? 'ph:sun-bold' : 'ph:moon-bold'" @click="toggleTheme()"/>
+				</template>
 			</LayoutNav>
 		</template>
 

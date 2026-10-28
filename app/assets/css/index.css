@@ -2,82 +2,102 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-    /* สีแบรนด์หลัก ปุ่ม CTA หลัก, Active Nav Pill, Header Banners */
-    --color-primary: #00596a;
-    /* สภาวะ Hover ของปุ่มหลัก */
-    --color-primary-hover: #007380;
-    /* สภาวะ Active / Pressed */
-    --color-primary-active: #004754;
-    /* แสงเรืองรอง (Soft Glow), พื้นหลังแท็บที่ยังไม่ได้เลือก */
-    --color-primary-light: #e6f0f2;
-    /* พื้นหลัง Soft Glow Banner โทนสว่างโปร่งสบายตา */
-    --color-primary-surface: #f0f9fa;
+	/* สีแบรนด์หลัก ปุ่ม CTA หลัก, Active Nav Pill, Header Banners */
+	--color-primary: #00596a;
+	/* สภาวะ Hover ของปุ่มหลัก */
+	--color-primary-hover: #007380;
+	/* สภาวะ Active / Pressed */
+	--color-primary-active: #004754;
+	/* แสงเรืองรอง (Soft Glow), พื้นหลังแท็บที่ยังไม่ได้เลือก */
+	--color-primary-light: #e6f0f2;
+	/* พื้นหลัง Soft Glow Banner โทนสว่างโปร่งสบายตา */
+	--color-primary-surface: #f0f9fa;
 
-    /* สีเขียวแบนเนอร์ Room & Zone Hub, ป้ายสถาบัน */
-    --color-secondary: #00aed0;
-    /* สีเขียวเข้มขึ้นเมื่อ Hover */
-    --color-secondary-hover: #0a5a43;
-    /* พื้นหลังป้ายและ Badge สีเขียว */
-    --color-secondary-light: #e8f5e9;
-    /* สีเขียวมรกต สถานะออนไลน์ (Live Active), ตรวจสอบ E2EE ผ่าน */
-    --color-secondary-accent: #10b981;
+	/* สีเขียวแบนเนอร์ Room & Zone Hub, ป้ายสถาบัน */
+	--color-secondary: #00aed0;
+	/* สีเขียวเข้มขึ้นเมื่อ Hover */
+	--color-secondary-hover: #0a5a43;
+	/* พื้นหลังป้ายและ Badge สีเขียว */
+	--color-secondary-light: #e8f5e9;
+	/* สีเขียวมรกต สถานะออนไลน์ (Live Active), ตรวจสอบ E2EE ผ่าน */
+	--color-secondary-accent: #10b981;
 
-    /* สีเหลืองทอง/อำพัน ไอคอนไฟกำลังมาแรง, ดาวคะแนนรีวิว */
-    --color-tertiary: #aab50d;
-    /* สภาวะ Hover */
-    --color-tertiary-hover: #d97706;
-    /* พื้นหลังแท็กพรีเมียม (Gold Shield / Star Creator) */
-    --color-tertiary-light: #fef3c7;
-    /* ตัวหนังสือข้อความบนแท็กสีทอง */
-    --color-tertiary-dark: #b45309;
+	/* สีเหลืองทอง/อำพัน ไอคอนไฟกำลังมาแรง, ดาวคะแนนรีวิว */
+	--color-tertiary: #aab50d;
+	/* สภาวะ Hover */
+	--color-tertiary-hover: #d97706;
+	/* พื้นหลังแท็กพรีเมียม (Gold Shield / Star Creator) */
+	--color-tertiary-light: #fef3c7;
+	/* ตัวหนังสือข้อความบนแท็กสีทอง */
+	--color-tertiary-dark: #b45309;
 
-    /* พื้นหลังหลักของทั้งหน้าจอ (Bright Clean Canvas) */
-    --color-surface-canvas: #fafbfd;
-    /* พื้นหลังการ์ดเนื้อหา (Card Container) และ Modal */
-    --color-surface-card: #ffffff;
-    /* พื้นหลังคอนเทนเนอร์ระดับล่าง */
-    --color-surface-low: #eff4ff;
-    /* เส้นขอบ (Subtle Border) */
-    --color-surface-border: #e2e8f0;
-    /* เส้นขอบเมื่อโฟกัส */
-    --color-surface-border-focus: #94a3b8;
+	/* พื้นหลังหลักของทั้งหน้าจอ (Bright Clean Canvas) */
+	--color-surface-canvas: #fafbfd;
+	/* พื้นหลังการ์ดเนื้อหา (Card Container) และ Modal */
+	--color-surface-card: #ffffff;
+	/* พื้นหลังคอนเทนเนอร์ระดับล่าง */
+	--color-surface-low: #eff4ff;
+	/* เส้นขอบ (Subtle Border) */
+	--color-surface-border: #e2e8f0;
+	/* เส้นขอบเมื่อโฟกัส */
+	--color-surface-border-focus: #94a3b8;
 
-    /* ตัวหนังสือหลัก, หัวข้อ (Headings) อ่านง่าย คอนทราสต์สูง */
-    --color-content: #0f172a;
-    /* เนื้อหาบทความและโพสต์ทั่วไป */
-    --color-content-body: #1e293b;
-    /* ข้อความรอง วันที่ เวลา สถิติย่อย (ผ่านเกณฑ์ WCAG AA 4.5:1+) */
-    --color-content-muted: #475569;
-    /* ไอคอนรองและคำอธิบายประกอบที่ไม่เน้น */
-    --color-content-subtle: #64748b;
-    /* ตัวหนังสือสีขาวสำหรับพื้นหลังสีเข้ม/ปุ่มหลัก */
-    --color-content-inverse: #ffffff;
+	/* ตัวหนังสือหลัก, หัวข้อ (Headings) อ่านง่าย คอนทราสต์สูง */
+	--color-content: #0f172a;
+	/* เนื้อหาบทความและโพสต์ทั่วไป */
+	--color-content-body: #1e293b;
+	/* ข้อความรอง วันที่ เวลา สถิติย่อย (ผ่านเกณฑ์ WCAG AA 4.5:1+) */
+	--color-content-muted: #475569;
+	/* ไอคอนรองและคำอธิบายประกอบที่ไม่เน้น */
+	--color-content-subtle: #64748b;
+	/* ตัวหนังสือสีขาวสำหรับพื้นหลังสีเข้ม/ปุ่มหลัก */
+	--color-content-inverse: #ffffff;
 
-    /* สถานะสำเร็จ / ยืนยันตัวตนแล้ว */
-    --color-status-success: #10b981;
-    /* รอการตรวจสอบ (Moderation Pending) */
-    --color-status-warning: #f59e0b;
-    /* ข้อผิดพลาด / หัวใจ (Likes & Kudos) */
-    --color-status-error: #ef4444;
-    /* แท็กข้อมูลทั่วไป / ลิงก์ดาวน์โหลดชีท PDF */
-    --color-status-info: #0284c7;
-    /* เครื่องมือ AI (OpenGraph Concept Map, CSI WASM) */
-    --color-status-purple: #8b5cf6;
+	/* สถานะสำเร็จ / ยืนยันตัวตนแล้ว */
+	--color-status-success: #10b981;
+	/* รอการตรวจสอบ (Moderation Pending) */
+	--color-status-warning: #f59e0b;
+	/* ข้อผิดพลาด / หัวใจ (Likes & Kudos) */
+	--color-status-error: #ef4444;
+	/* แท็กข้อมูลทั่วไป / ลิงก์ดาวน์โหลดชีท PDF */
+	--color-status-info: #0284c7;
+	/* เครื่องมือ AI (OpenGraph Concept Map, CSI WASM) */
+	--color-status-purple: #8b5cf6;
 
-    --breakpoint-3xl: calc(var(--spacing) * 54);
+	--breakpoint-3xl: calc(var(--spacing) * 54);
 
-    --font-inter: "Inter", "Kanit", sans-serif;
-    --font-plus-jakarta-sans: "Plus Jakarta Sans", "Kanit", sans-serif;
+	--font-inter: "Inter", "Kanit", sans-serif;
+	--font-plus-jakarta-sans: "Plus Jakarta Sans", "Kanit", sans-serif;
 }
 
-body {
-    background-color: var(--color-surface-canvas);
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+	html.dark {
+		@media (prefers-color-scheme: dark) {
+			filter: invert(100%) hue-rotate(180deg) brightness(80%)
+				contrast(95%) sepia(25%);
+		}
+	}
+
+    @media (prefers-color-scheme: dark) {
+        html.dark img,
+        html.dark video,
+        html.dark iframe,
+        html.dark svg {
+            filter: invert(100%) hue-rotate(180deg);
+        }
+    }
+
+	body {
+		background-color: var(--color-surface-canvas);
+	}
 }
 
 @utility px-vision {
-    @apply px-6 sm:px-12 md:px-24 lg:px-32 xl:px-46 2xl:px-52 3xl:px-68;
+	@apply px-6 sm:px-12 md:px-24 lg:px-32 xl:px-46 2xl:px-52 3xl:px-68;
 }
 
 @utility ui-prose {
-    @apply prose min-w-0 max-w-none prose-sm prose-h2:mt-4 prose-h2:mb-2 prose-h3:mt-3 prose-h3:mb-1 prose-h1:mb-3 prose-h1:text-2xl prose-headings:text-content prose-headings:font-semibold prose-strong:font-semibold prose-p:text-content-body prose-p:my-2 prose-p:first:mt-0 prose-p:last:mb-0;
+	@apply prose min-w-0 max-w-none prose-sm prose-h2:mt-4 prose-h2:mb-2 prose-h3:mt-3 prose-h3:mb-1 prose-h1:mb-3 prose-h1:text-2xl prose-headings:text-content prose-headings:font-semibold prose-strong:font-semibold prose-p:text-content-body prose-p:my-2 prose-p:first:mt-0 prose-p:last:mb-0;
 }

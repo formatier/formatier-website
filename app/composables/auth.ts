@@ -1,3 +1,7 @@
+export const authStore = defineStore("auth", {
+  
+})
+
 export const useAuth = () => {
   const authState = useAsyncData(
     "auth:auth-state",
