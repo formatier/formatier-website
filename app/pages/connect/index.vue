@@ -1,6 +1,6 @@
 <script setup lang="ts">
 definePageMeta({
-    pageId: "add-ons",
+    pageId: "connect",
 });
 </script>
 

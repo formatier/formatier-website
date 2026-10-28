@@ -35,7 +35,7 @@ const showDropper = ref(false);
 		</HomeBanner>
 	</div>
 
-	<HomeContentContainer>
+	<SharedLayoutLCcR>
 		<template #left>
 			<UiCard>
 				<UiCardTitle>Room and Zone</UiCardTitle>
@@ -65,7 +65,8 @@ const showDropper = ref(false);
 				image: 'https://picsum.photos/200',
 			}"
 			:content="{
-				content: 'Dont put tabs or spaces in front of your paragraphs. Keep lines left-aligned like this. Dont put tabs or spaces in front of your paragraphs. Keep lines left-aligned like this. Dont put tabs or spaces in front of your paragraphs. Keep lines left-aligned like this. Dont put tabs or spaces in front of your paragraphs. Keep lines left-aligned like this. Dont put tabs or spaces in front of your paragraphs. Keep lines left-aligned like this. Dont put tabs or spaces in front of your paragraphs. Keep lines left-aligned like this. Dont put tabs or spaces in front of your paragraphs. Keep lines left-aligned like this. Dont put tabs or spaces in front of your paragraphs. Keep lines left-aligned like this. Dont put tabs or spaces in front of your paragraphs. Keep lines left-aligned like this. Dont put tabs or spaces in front of your paragraphs. Keep lines left-aligned like this. Dont put tabs or spaces in front of your paragraphs. Keep lines left-aligned like this.',
+				content:
+					'Dont put tabs or spaces in front of your paragraphs. Keep lines left-aligned like this. Dont put tabs or spaces in front of your paragraphs. Keep lines left-aligned like this. Dont put tabs or spaces in front of your paragraphs. Keep lines left-aligned like this. Dont put tabs or spaces in front of your paragraphs. Keep lines left-aligned like this. Dont put tabs or spaces in front of your paragraphs. Keep lines left-aligned like this. Dont put tabs or spaces in front of your paragraphs. Keep lines left-aligned like this. Dont put tabs or spaces in front of your paragraphs. Keep lines left-aligned like this. Dont put tabs or spaces in front of your paragraphs. Keep lines left-aligned like this. Dont put tabs or spaces in front of your paragraphs. Keep lines left-aligned like this. Dont put tabs or spaces in front of your paragraphs. Keep lines left-aligned like this. Dont put tabs or spaces in front of your paragraphs. Keep lines left-aligned like this.',
 				tags: ['first post'],
 				createdAt: 0,
 				spacialTag: {
@@ -87,24 +88,37 @@ const showDropper = ref(false);
 			<UiCard>
 				<UiCardTitle>
 					Trandings
-					<template #link>
-						Realtime
-					</template>
+					<template #link> Realtime </template>
 				</UiCardTitle>
 				<UiCardContainer>
 					<div class="flex flex-col gap-4">
-						<div class="flex justify-between items-center" v-for="value in ['first post', 'สรุปฟิสิกส์', 'พลีชีพปลายภาค']">
+						<div
+							class="flex justify-between items-center"
+							v-for="value in [
+								'first post',
+								'สรุปฟิสิกส์',
+								'พลีชีพปลายภาค',
+							]"
+						>
 							<div class="flex flex-col">
-								<span class="text-content-body text-sm font-bold">#{{ value.toUpperCase() }}</span>
-								<span class="text-content-muted text-xs">320 Posts Today!</span>
+								<span
+									class="text-content-body text-sm font-bold"
+									>#{{ value.toUpperCase() }}</span
+								>
+								<span class="text-content-muted text-xs"
+									>320 Posts Today!</span
+								>
 							</div>
 							<div>
-								<Icon name="ph:chart-line-up" class="size-5 text-primary"></Icon>
+								<Icon
+									name="ph:chart-line-up"
+									class="size-5 text-primary"
+								></Icon>
 							</div>
 						</div>
 					</div>
 				</UiCardContainer>
 			</UiCard>
 		</template>
-	</HomeContentContainer>
+	</SharedLayoutLCcR>
 </template>
