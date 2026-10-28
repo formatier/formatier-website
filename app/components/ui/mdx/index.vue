@@ -23,6 +23,6 @@ onMounted(async () => {
 <template>
 	<div
 		ref="content"
-		class="prose max-w-none prose-sm prose-h2:mt-4 prose-h2:mb-2 prose-h3:mt-3 prose-h3:mb-1 prose-h1:mb-3 prose-headings:text-content prose-p:text-content-body prose-p:my-2 prose-p:first:mt-0 prose-p:last:mb-0"
+		class="ui-prose font-plus-jakarta-sans"
 	></div>
 </template>

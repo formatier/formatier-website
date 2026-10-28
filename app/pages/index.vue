@@ -7,10 +7,10 @@ const showDropper = ref(false);
 </script>
 
 <template>
-	<div class="px-vision pt-6 mb-8">
+	<div class="px-vision pt-6">
 		<HomeBanner>
 			<template #labels>
-				<div class="flex gap-2">
+				<div class="gap-2 hidden lg:flex">
 					<UiLabel variant="primary">Welcome to Formatier</UiLabel>
 					<UiLabel variant="common">Add Integration</UiLabel>
 				</div>
